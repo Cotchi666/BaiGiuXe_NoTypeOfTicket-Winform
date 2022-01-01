@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C403945D-27B0-4607-B108-1847D3F5A58B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DoAnWinform</RootNamespace>
+    <AssemblyName>DoAnWinform</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="QuanLiThongTin\FormChangeBaiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLiThongTin\FormChangeBaiXe.Designer.cs">
+      <DependentUpon>FormChangeBaiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\FormHT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe\FormHT.Designer.cs">
+      <DependentUpon>FormHT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe\FormThongKe.Designer.cs">
+      <DependentUpon>FormThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongKe\FormXeDaGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongKe\FormXeDaGui.Designer.cs">
+      <DependentUpon>FormXeDaGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\XeDaGui.cs" />
+    <Compile Include="QuanLiThongTin\FormAddTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLiThongTin\FormAddTicket.Designer.cs">
+      <DependentUpon>FormAddTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLiThongTin\FormDSXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLiThongTin\FormDSXe.Designer.cs">
+      <DependentUpon>FormDSXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLiThongTin\FormQLVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLiThongTin\FormQLVe.Designer.cs">
+      <DependentUpon>FormQLVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormThayDoiThongTinNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormThayDoiThongTinNhanVien.Designer.cs">
+      <DependentUpon>FormThayDoiThongTinNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLiThongTin\FormQLBaiXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLiThongTin\FormQLBaiXe.Designer.cs">
+      <DependentUpon>FormQLBaiXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDN.Designer.cs">
+      <DependentUpon>FormDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FormDSAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FormDSAD.Designer.cs">
+      <DependentUpon>FormDSAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManHinhChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManHinhChinh.Designer.cs">
+      <DependentUpon>FormManHinhChinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\admin.cs" />
+    <Compile Include="Models\baixe.cs" />
+    <Compile Include="Models\ve.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLiThongTin\FormQLXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLiThongTin\FormQLXe.Designer.cs">
+      <DependentUpon>FormQLXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TruyVan\adminDA.cs" />
+    <Compile Include="TruyVan\baixeDA.cs" />
+    <Compile Include="TruyVan\dataprovider.cs" />
+    <Compile Include="TruyVan\loginDA.cs" />
+    <Compile Include="TruyVan\taikhoanDA.cs" />
+    <Compile Include="Models\thongke.cs" />
+    <Compile Include="TruyVan\veDA.cs" />
+    <Compile Include="Models\xe.cs" />
+    <Compile Include="TruyVan\xeDA.cs" />
+    <Compile Include="TruyVan\xeDaGuiDA.cs" />
+    <EmbeddedResource Include="Admin\FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLiThongTin\FormDSXe.resx">
+      <DependentUpon>FormDSXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLiThongTin\FormQLBaiXe.resx">
+      <DependentUpon>FormQLBaiXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDN.resx">
+      <DependentUpon>FormDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormDSAD.resx">
+      <DependentUpon>FormDSAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManHinhChinh.resx">
+      <DependentUpon>FormManHinhChinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FormThayDoiThongTinNhanVien.resx">
+      <DependentUpon>FormThayDoiThongTinNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QuanLiThongTin\FormQLXe.resx">
+      <DependentUpon>FormQLXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinh-nen-win-8-full-hd-dep-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35143308_193899548099657_8205018484766146560_n.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
