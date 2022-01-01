@@ -1,0 +1,17 @@
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.csproj.AssemblyReference.cache
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.FormDN.resources
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.FormManHinhChinh.resources
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.Properties.Resources.resources
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.csproj.GenerateResource.cache
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.csproj.CoreCompileInputs.cache
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\bin\Debug\DoAnWinform.exe.config
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\bin\Debug\DoAnWinform.exe
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\bin\Debug\DoAnWinform.pdb
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.exe
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.pdb
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.FormAdmin.resources
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.FormBaiXe.resources
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.QuanLiThongTin.FormDSXe.resources
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.QuanLiThongTin.FormQLXe.resources
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.FormThongKe.resources
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.FormHT.resources
