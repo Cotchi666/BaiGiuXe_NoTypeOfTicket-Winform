@@ -31,12 +31,8 @@ namespace DoAnWinform
                 taikhoanDA.ten = taikhoanDA.layten(txttaikhoan.Text);
                 taikhoanDA.loainv = taikhoanDA.layloainv(txttaikhoan.Text);
                 taikhoanDA.tk = username;
-                taikhoanDA.quyenadmin = loginDA.Instance.quyenquanly(username, password);
-                taikhoanDA.quyenddangnhap = loginDA.Instance.quyenADMIN(username, password);
-                //if (taikhoan.loainv == "Nhân viên quản lý")
-                //  MessageBox.Show("đăng nhập thành công với quyền của: NHÂN VIÊN QUẢN LÝ.");
-                //if (taikhoan.loainv == "Nhân viên thường")
-                //    MessageBox.Show("đăng nhập thành công với quyền của: NhÂN VIÊN THƯỜNG.");
+                
+
                 this.Hide();
                 FormManHinhChinh fm = new FormManHinhChinh();
                 fm.ShowDialog();

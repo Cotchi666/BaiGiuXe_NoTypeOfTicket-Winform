@@ -17,10 +17,7 @@ namespace DoAnWinform
         public FormQLVe()
         {
             InitializeComponent();
-            if (!taikhoanDA.quyenadmin)
-                button4.Enabled = false;
-            if (!taikhoanDA.quyenddangnhap)
-                this.Enabled = false;
+            
             dataGridViewve.DataSource = veDA.Instance.hienthi();
             tonsove.Text = (veDA.Instance.sovedangdung() + veDA.Instance.sovetrong() - 2).ToString();
             vetrong.Text = (veDA.Instance.sovetrong() - 2).ToString();
@@ -29,8 +26,6 @@ namespace DoAnWinform
             dataGridViewve.Columns[2].HeaderText = "Biển số";
 
         }
-
- 
 
         private void button4_Click(object sender, EventArgs e)
         {

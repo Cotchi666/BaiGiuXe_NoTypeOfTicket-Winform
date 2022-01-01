@@ -19,10 +19,7 @@ namespace DoAnWinform
         {
             InitializeComponent();
             hienthi();
-            if (!taikhoanDA.quyenddangnhap)
-            {
-                this.Enabled = false;
-            }
+           
         }
         void hienthi()
         {
@@ -40,8 +37,6 @@ namespace DoAnWinform
             this.pnmain.Controls.Add(ad);
             ad.Show();
         }
-
-
 
         private void bttrogiup_Click(object sender, EventArgs e)
         {

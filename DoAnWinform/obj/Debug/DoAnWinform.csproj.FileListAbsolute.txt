@@ -10,8 +10,7 @@ C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\bin\Debug\DoAnWinform.pdb
 C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.exe
 C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.pdb
 C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.FormAdmin.resources
-C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.FormDSAD.resources
 C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.FormBaiXe.resources
-C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.FormThayDoiThongTinNhanVien.resources
 C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.QuanLiThongTin.FormDSXe.resources
 C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.QuanLiThongTin.FormQLXe.resources
+C:\Users\Chien\source\repos\DoAnWinform\DoAnWinform\obj\Debug\DoAnWinform.FormThongKe.resources

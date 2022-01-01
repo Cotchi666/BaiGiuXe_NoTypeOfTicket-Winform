@@ -23,29 +23,11 @@ namespace DoAnWinform
         void hienthi()
         {
             this.pnthongke.Controls.Clear();
-            FormXeDaGui x = new FormXeDaGui();
+            FormHT x = new FormHT();
             x.TopLevel = false;
             this.pnthongke.Controls.Add(x);
             x.Show();
 
         }
-        private void btdanhsachnhanvien_Click(object sender, EventArgs e)
-        {
-            this.pnthongke.Controls.Clear();
-            FormHT h = new FormHT();
-            h.TopLevel = false;
-            this.pnthongke.Controls.Add(h);
-            h.Show();
-        }
-
-        private void btdsxedagui_Click(object sender, EventArgs e)
-        {
-            this.pnthongke.Controls.Clear();
-            FormXeDaGui x = new FormXeDaGui();
-            x.TopLevel = false;
-            this.pnthongke.Controls.Add(x);
-            x.Show();
-        }
-
     }
 }

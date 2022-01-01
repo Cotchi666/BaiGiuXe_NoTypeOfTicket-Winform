@@ -39,7 +39,6 @@ namespace DoAnWinform
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewve)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,22 +149,11 @@ namespace DoAnWinform
             this.label10.TabIndex = 8;
             this.label10.Text = "Bãi xe máy: ";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(291, 155);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(169, 39);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Thay đổi thông tin bến";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // FormBaiXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 435);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.xmtrog);
             this.Controls.Add(this.xmtong);
             this.Controls.Add(this.label8);
@@ -201,6 +189,5 @@ namespace DoAnWinform
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button2;
     }
 }

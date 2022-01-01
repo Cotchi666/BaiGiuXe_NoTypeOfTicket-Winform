@@ -102,10 +102,10 @@ namespace DoAnWinform
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(443, 13);
+            this.pictureBox5.Location = new System.Drawing.Point(358, 13);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(509, 66);
+            this.pictureBox5.Size = new System.Drawing.Size(550, 42);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;

@@ -11,8 +11,7 @@ namespace DoAnWinform.TruyXuatDA
 {
     class taikhoanDA
     {
-        public static bool quyenadmin = false;
-        public static bool quyenddangnhap = false;
+       
         public static string tk = "";
         public static string ten = "";
         public static string loainv = "";
@@ -24,7 +23,7 @@ namespace DoAnWinform.TruyXuatDA
             data = dataprovider.Instance.ExcuteQuery(Query);
             foreach (DataRow item in data.Rows)
             {
-                admin b = new admin(item);
+                taikhoan b = new taikhoan(item);
                 ten = b.Tenht;
             }
             return ten;
@@ -37,22 +36,11 @@ namespace DoAnWinform.TruyXuatDA
             data = dataprovider.Instance.ExcuteQuery(Query);
             foreach (DataRow item in data.Rows)
             {
-                admin b = new admin(item);
+                taikhoan b = new taikhoan(item);
                 loai = b.Loainv;
             }
             return loai;
         }
-        public static Boolean mahoaso(string so)
-        {
-            string Rules = @"^\d{1,7}$";
-            Regex Myregex = new Regex(Rules);
-            return Myregex.IsMatch(so);
-        }
-        public static Boolean mahoasodt(string so)
-        {
-            string Rules = @"^\+?\d{1,3}?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$";
-            Regex Myregex = new Regex(Rules);
-            return Myregex.IsMatch(so);
-        }
+
     }
 }

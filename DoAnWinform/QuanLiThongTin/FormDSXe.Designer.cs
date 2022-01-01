@@ -61,7 +61,7 @@ namespace DoAnWinform.QuanLiThongTin
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.bttimkiemtheobien = new System.Windows.Forms.Button();
             this.txttkbien = new System.Windows.Forms.TextBox();
-            this.btdkvethang = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewxe)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -123,6 +123,7 @@ namespace DoAnWinform.QuanLiThongTin
             this.btxuatben.TabIndex = 10;
             this.btxuatben.Text = "Xuất bến";
             this.btxuatben.UseVisualStyleBackColor = true;
+            this.btxuatben.Click += new System.EventHandler(this.btxuatben_Click);
             // 
             // lbtenxe
             // 
@@ -144,6 +145,7 @@ namespace DoAnWinform.QuanLiThongTin
             this.btvaoben.TabIndex = 9;
             this.btvaoben.Text = "Vào bến";
             this.btvaoben.UseVisualStyleBackColor = true;
+            this.btvaoben.Click += new System.EventHandler(this.btvaoben_Click);
             // 
             // lbmauxe
             // 
@@ -414,24 +416,23 @@ namespace DoAnWinform.QuanLiThongTin
             this.txttkbien.Size = new System.Drawing.Size(100, 24);
             this.txttkbien.TabIndex = 6;
             // 
-            // btdkvethang
+            // button1
             // 
-            this.btdkvethang.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btdkvethang.ForeColor = System.Drawing.Color.Black;
-            this.btdkvethang.Location = new System.Drawing.Point(570, 228);
-            this.btdkvethang.Name = "btdkvethang";
-            this.btdkvethang.Size = new System.Drawing.Size(158, 35);
-            this.btdkvethang.TabIndex = 13;
-            this.btdkvethang.Text = "Đăng ký vé tháng";
-            this.btdkvethang.UseVisualStyleBackColor = true;
-            this.btdkvethang.Click += new System.EventHandler(this.btdkvethang_Click);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(565, 227);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 35);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Thêm";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FormDSXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 435);
-            this.Controls.Add(this.btdkvethang);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btsua);
@@ -464,7 +465,6 @@ namespace DoAnWinform.QuanLiThongTin
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button bttimkiemtheobien;
         private System.Windows.Forms.TextBox txttkbien;
-        private System.Windows.Forms.Button btdkvethang;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btxuatben;
         private System.Windows.Forms.Label lbtenxe;
@@ -489,5 +489,6 @@ namespace DoAnWinform.QuanLiThongTin
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtbien;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

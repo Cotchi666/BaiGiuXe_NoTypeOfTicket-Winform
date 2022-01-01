@@ -17,8 +17,8 @@ namespace DoAnWinform.QuanLiThongTin
         {
             InitializeComponent();
             hienthiqlxe();
-            chao.Text = "Chào " + taikhoanDA.ten.ToString();
-            loainv.Text = "Chức vụ: " + taikhoanDA.loainv.ToString();
+            chao.Text = taikhoanDA.ten.ToString();
+            loainv.Text =  taikhoanDA.loainv.ToString();
         }
         void hienthiqlxe()
         {
@@ -55,5 +55,7 @@ namespace DoAnWinform.QuanLiThongTin
             this.pnaqlxe.Controls.Add(d);
             d.Show();
         }
+
+   
     }
 }

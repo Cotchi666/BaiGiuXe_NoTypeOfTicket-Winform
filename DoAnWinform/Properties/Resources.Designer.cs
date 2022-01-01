@@ -63,9 +63,9 @@ namespace DoAnWinform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap hinh_nen_win_8_full_hd_dep_2 {
+        internal static System.Drawing.Bitmap icons8_help_50 {
             get {
-                object obj = ResourceManager.GetObject("hinh-nen-win-8-full-hd-dep-2", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-help-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace DoAnWinform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Naruto {
+        internal static System.Drawing.Bitmap icons8_help_501 {
             get {
-                object obj = ResourceManager.GetObject("Naruto", resourceCulture);
+                object obj = ResourceManager.GetObject("icons8-help-501", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

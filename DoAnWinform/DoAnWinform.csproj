@@ -46,11 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="QuanLiThongTin\FormChangeBaiXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuanLiThongTin\FormChangeBaiXe.Designer.cs">
-      <DependentUpon>FormChangeBaiXe.cs</DependentUpon>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="ThongKe\FormHT.cs">
       <SubType>Form</SubType>
@@ -63,12 +62,6 @@
     </Compile>
     <Compile Include="ThongKe\FormThongKe.Designer.cs">
       <DependentUpon>FormThongKe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ThongKe\FormXeDaGui.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThongKe\FormXeDaGui.Designer.cs">
-      <DependentUpon>FormXeDaGui.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\XeDaGui.cs" />
     <Compile Include="QuanLiThongTin\FormAddTicket.cs">
@@ -89,12 +82,6 @@
     <Compile Include="QuanLiThongTin\FormQLVe.Designer.cs">
       <DependentUpon>FormQLVe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\FormThayDoiThongTinNhanVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\FormThayDoiThongTinNhanVien.Designer.cs">
-      <DependentUpon>FormThayDoiThongTinNhanVien.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin\FormAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,19 +100,13 @@
     <Compile Include="FormDN.Designer.cs">
       <DependentUpon>FormDN.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin\FormDSAD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin\FormDSAD.Designer.cs">
-      <DependentUpon>FormDSAD.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormManHinhChinh.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormManHinhChinh.Designer.cs">
       <DependentUpon>FormManHinhChinh.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\admin.cs" />
+    <Compile Include="Models\taikhoan.cs" />
     <Compile Include="Models\baixe.cs" />
     <Compile Include="Models\ve.cs" />
     <Compile Include="Program.cs" />
@@ -136,7 +117,6 @@
     <Compile Include="QuanLiThongTin\FormQLXe.Designer.cs">
       <DependentUpon>FormQLXe.cs</DependentUpon>
     </Compile>
-    <Compile Include="TruyVan\adminDA.cs" />
     <Compile Include="TruyVan\baixeDA.cs" />
     <Compile Include="TruyVan\dataprovider.cs" />
     <Compile Include="TruyVan\loginDA.cs" />
@@ -158,27 +138,19 @@
     <EmbeddedResource Include="FormDN.resx">
       <DependentUpon>FormDN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\FormDSAD.resx">
-      <DependentUpon>FormDSAD.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormManHinhChinh.resx">
       <DependentUpon>FormManHinhChinh.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\FormThayDoiThongTinNhanVien.resx">
-      <DependentUpon>FormThayDoiThongTinNhanVien.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="QuanLiThongTin\FormQLXe.resx">
       <DependentUpon>FormQLXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\FormThongKe.resx">
+      <DependentUpon>FormThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -194,11 +166,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\hinh-nen-win-8-full-hd-dep-2.jpg" />
+    <Content Include="Resources\icons8-help-50.jpg" />
+    <None Include="Resources\icons8-help-50.png" />
+    <None Include="Resources\icons8-help-501.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\35143308_193899548099657_8205018484766146560_n.jpg" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,32 +16,10 @@ namespace DoAnWinform
         public FormAdmin()
         { 
                 InitializeComponent();
-                hienthidanhsachad();
+             
                 chao.Text = "Chào " + taikhoanDA.ten.ToString();
                 loainv.Text = "Chức vụ: " + taikhoanDA.loainv.ToString();
             }
-            void hienthidanhsachad()
-            {
-                this.pnadmin.Controls.Clear();
-                FormDSAD dsad = new FormDSAD();
-                dsad.TopLevel = false;
-                this.pnadmin.Controls.Add(dsad);
-                dsad.Show();
-            }
 
-
-            private void btdanhsachnhanvien_Click(object sender, EventArgs e)
-            {
-                this.pnadmin.Controls.Clear();
-                FormDSAD dsad = new FormDSAD();
-                dsad.TopLevel = false;
-                this.pnadmin.Controls.Add(dsad);
-                dsad.Show();
-            }
-
-        private void pnadmin_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

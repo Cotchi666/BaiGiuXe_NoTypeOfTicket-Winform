@@ -30,7 +30,6 @@ namespace DoAnWinform
         private void InitializeComponent()
         {
             this.pnadmin = new System.Windows.Forms.Panel();
-            this.btdanhsachnhanvien = new System.Windows.Forms.Button();
             this.chao = new System.Windows.Forms.Label();
             this.loainv = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -39,27 +38,11 @@ namespace DoAnWinform
             // 
             this.pnadmin.BackColor = System.Drawing.SystemColors.Control;
             this.pnadmin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnadmin.Location = new System.Drawing.Point(241, 34);
+            this.pnadmin.Location = new System.Drawing.Point(110, 34);
             this.pnadmin.Margin = new System.Windows.Forms.Padding(4);
             this.pnadmin.Name = "pnadmin";
             this.pnadmin.Size = new System.Drawing.Size(765, 437);
             this.pnadmin.TabIndex = 0;
-            this.pnadmin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnadmin_Paint);
-            // 
-            // btdanhsachnhanvien
-            // 
-            this.btdanhsachnhanvien.BackColor = System.Drawing.Color.Orange;
-            this.btdanhsachnhanvien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btdanhsachnhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btdanhsachnhanvien.Location = new System.Drawing.Point(-3, 183);
-            this.btdanhsachnhanvien.Margin = new System.Windows.Forms.Padding(4);
-            this.btdanhsachnhanvien.Name = "btdanhsachnhanvien";
-            this.btdanhsachnhanvien.Size = new System.Drawing.Size(245, 69);
-            this.btdanhsachnhanvien.TabIndex = 1;
-            this.btdanhsachnhanvien.Text = "Danh sách nhân viên";
-            this.btdanhsachnhanvien.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btdanhsachnhanvien.UseVisualStyleBackColor = false;
-            this.btdanhsachnhanvien.Click += new System.EventHandler(this.btdanhsachnhanvien_Click);
             // 
             // chao
             // 
@@ -89,7 +72,6 @@ namespace DoAnWinform
             this.ClientSize = new System.Drawing.Size(1015, 474);
             this.Controls.Add(this.loainv);
             this.Controls.Add(this.chao);
-            this.Controls.Add(this.btdanhsachnhanvien);
             this.Controls.Add(this.pnadmin);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
@@ -105,7 +87,6 @@ namespace DoAnWinform
         #endregion
 
         private System.Windows.Forms.Panel pnadmin;
-        private System.Windows.Forms.Button btdanhsachnhanvien;
         private System.Windows.Forms.Label chao;
         private System.Windows.Forms.Label loainv;
     }

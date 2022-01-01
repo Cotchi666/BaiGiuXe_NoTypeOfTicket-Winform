@@ -18,8 +18,8 @@ namespace DoAnWinform
         {
             InitializeComponent();
             hienthi();
-            if (!taikhoanDA.quyenadmin)
-                this.button2.Enabled = false;
+           
+                
             dataGridViewve.Columns[0].HeaderText = "Loại xe";
             dataGridViewve.Columns[1].HeaderText = "Tổng số chỗ";
             dataGridViewve.Columns[2].HeaderText = "Số chỗ trống";
@@ -31,12 +31,6 @@ namespace DoAnWinform
         void hienthi()
         {
             dataGridViewve.DataSource = baixeDA.Instance.hienthi();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            FormChangeBaiXe f = new FormChangeBaiXe();
-            f.ShowDialog();
         }
 
     }

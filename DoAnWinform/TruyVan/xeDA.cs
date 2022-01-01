@@ -89,24 +89,7 @@ namespace DoAnWinform.TruyXuatDA
             int ve = dataprovider.Instance.ExcuteNonQuery(Queryve);
             return (0 < xe && 0 < bai && 0 < ve);
         }
-        ////đăng ký vé tháng.
-        public Boolean dangkyvethang(string maSoVe, string loaixe, string bienSo, string tenxe, string mauxe, DateTime tgvaoben)
-        {
-            int tien = 0;
-            if (loaixe == "Ô tô")
-                tien = 1200000;
-            else if (loaixe == "Xe máy")
-                tien = 120000;
 
-            string query = "insert into XE values(N'Vé tháng',N'" + bienSo + "',N'" + loaixe + "',N'" + tenxe + "',N'" + mauxe + "',N'Vé tháng','" + tgvaoben + "',null,'" + DateTime.Now + "','" + DateTime.Now.AddDays(30) + "')";
-            if (tontaixe(bienSo))
-            {
-                query = "update XE set tenXe=N'" + tenxe + "',mauXe=N'" + mauxe + "',loaiVe=N'Vé tháng',ngayDangKy='" + DateTime.Now + "',ngayHetHan='" + DateTime.Now.AddDays(30) + "' where bienSo=N'" + bienSo + "'";
-            }
-            string querytk = "insert into THONGKE values(N'Vé tháng',N'" + bienSo + "',N'" + loaixe + "',N'" + tenxe + "',N'" + mauxe + "',N'Vé tháng'," + tien + ",'" + tgvaoben + "','" + tgvaoben + "','" + DateTime.Now + "','" + DateTime.Now.AddDays(30) + "')";
-            string querytien = "update BAIXE set soTienThuVe=soTienThuVe+" + tien + " where loaiXe=N'" + loaixe + "'";
-            return (0 < dataprovider.Instance.ExcuteNonQuery(query) && 0 < dataprovider.Instance.ExcuteNonQuery(querytien) && 0 < dataprovider.Instance.ExcuteNonQuery(querytk));
-        }
         //sửa thông tin xe trong bến
         public Boolean sua(string maSoVe, string loaixe, string bienSo, string tenxe, string mauxe)
         {
@@ -186,7 +169,7 @@ namespace DoAnWinform.TruyXuatDA
         }
         public Boolean vethang(string bien)
         {
-            string query = "select * from XE where bienSo='" + bien + "' and loaiVe=N'Vé tháng'";
+            string query = "select * from XE where bienSo='" + bien + "' ";
             return dataprovider.Instance.ExcuteQuery(query).Rows.Count > 0;
         }
         //lấy tên
@@ -246,9 +229,6 @@ namespace DoAnWinform.TruyXuatDA
             return x;
         }
         //xóa khỏi danh sách vé tháng
-        //public void xoavethang()
-        //{
-        //    string query = "delete from VE where";
-        //}
+ 
     }
 }
