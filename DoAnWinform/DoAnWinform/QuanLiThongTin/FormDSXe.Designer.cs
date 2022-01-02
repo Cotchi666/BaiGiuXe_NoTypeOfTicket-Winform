@@ -61,7 +61,6 @@ namespace DoAnWinform.QuanLiThongTin
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.bttimkiemtheobien = new System.Windows.Forms.Button();
             this.txttkbien = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewxe)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -71,9 +70,9 @@ namespace DoAnWinform.QuanLiThongTin
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.btxuatben);
             this.groupBox1.Controls.Add(this.lbtenxe);
             this.groupBox1.Controls.Add(this.btvaoben);
+            this.groupBox1.Controls.Add(this.btxuatben);
             this.groupBox1.Controls.Add(this.lbmauxe);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label8);
@@ -117,7 +116,7 @@ namespace DoAnWinform.QuanLiThongTin
             // 
             this.btxuatben.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btxuatben.ForeColor = System.Drawing.Color.Black;
-            this.btxuatben.Location = new System.Drawing.Point(593, 143);
+            this.btxuatben.Location = new System.Drawing.Point(561, 152);
             this.btxuatben.Name = "btxuatben";
             this.btxuatben.Size = new System.Drawing.Size(125, 35);
             this.btxuatben.TabIndex = 10;
@@ -139,7 +138,7 @@ namespace DoAnWinform.QuanLiThongTin
             // 
             this.btvaoben.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btvaoben.ForeColor = System.Drawing.Color.Black;
-            this.btvaoben.Location = new System.Drawing.Point(374, 143);
+            this.btvaoben.Location = new System.Drawing.Point(374, 152);
             this.btvaoben.Name = "btvaoben";
             this.btvaoben.Size = new System.Drawing.Size(129, 35);
             this.btvaoben.TabIndex = 9;
@@ -350,7 +349,7 @@ namespace DoAnWinform.QuanLiThongTin
             // 
             this.btsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btsua.ForeColor = System.Drawing.Color.Black;
-            this.btsua.Location = new System.Drawing.Point(457, 228);
+            this.btsua.Location = new System.Drawing.Point(542, 224);
             this.btsua.Name = "btsua";
             this.btsua.Size = new System.Drawing.Size(85, 35);
             this.btsua.TabIndex = 8;
@@ -381,7 +380,7 @@ namespace DoAnWinform.QuanLiThongTin
             // 
             this.groupBox2.Controls.Add(this.bttimkiemtheove);
             this.groupBox2.Controls.Add(this.txttimkiemxe);
-            this.groupBox2.Location = new System.Drawing.Point(17, 208);
+            this.groupBox2.Location = new System.Drawing.Point(82, 205);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(202, 58);
             this.groupBox2.TabIndex = 11;
@@ -392,7 +391,7 @@ namespace DoAnWinform.QuanLiThongTin
             // 
             this.groupBox3.Controls.Add(this.bttimkiemtheobien);
             this.groupBox3.Controls.Add(this.txttkbien);
-            this.groupBox3.Location = new System.Drawing.Point(235, 209);
+            this.groupBox3.Location = new System.Drawing.Point(307, 206);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(206, 58);
             this.groupBox3.TabIndex = 12;
@@ -418,28 +417,16 @@ namespace DoAnWinform.QuanLiThongTin
             this.txttkbien.Size = new System.Drawing.Size(100, 24);
             this.txttkbien.TabIndex = 6;
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(565, 227);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 35);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // FormDSXe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(762, 435);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.btsua);
             this.Controls.Add(this.dataGridViewxe);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btsua);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -491,6 +478,5 @@ namespace DoAnWinform.QuanLiThongTin
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtbien;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
     }
 }

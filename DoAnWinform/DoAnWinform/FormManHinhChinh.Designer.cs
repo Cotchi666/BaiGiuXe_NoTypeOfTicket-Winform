@@ -34,6 +34,8 @@ namespace DoAnWinform
             this.btthongke = new System.Windows.Forms.Button();
             this.btquanlyxe = new System.Windows.Forms.Button();
             this.pnmain = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +49,7 @@ namespace DoAnWinform
             this.btadmin.Name = "btadmin";
             this.btadmin.Size = new System.Drawing.Size(112, 28);
             this.btadmin.TabIndex = 2;
-            this.btadmin.Text = "Tài khoản";
+            this.btadmin.Text = "Trang chủ";
             this.btadmin.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btadmin.UseVisualStyleBackColor = false;
             this.btadmin.Click += new System.EventHandler(this.btadmin_Click);
@@ -100,12 +102,32 @@ namespace DoAnWinform
             this.pnmain.Size = new System.Drawing.Size(1008, 471);
             this.pnmain.TabIndex = 4;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(468, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(308, 18);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Hệ thống bãi giữ xe uy tín hàng đầu thành phố ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(478, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(298, 46);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Bãi giữ xe HCM";
+            // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(358, 13);
+            this.pictureBox5.Location = new System.Drawing.Point(358, 1);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(550, 42);
+            this.pictureBox5.Size = new System.Drawing.Size(548, 82);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
@@ -116,6 +138,8 @@ namespace DoAnWinform
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1005, 558);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bttrogiup);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.btthongke);
@@ -130,6 +154,7 @@ namespace DoAnWinform
             this.Text = "Hệ thống quản lý bãi đỗ xe";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -140,5 +165,7 @@ namespace DoAnWinform
         private System.Windows.Forms.Button btquanlyxe;
         private System.Windows.Forms.Panel pnmain;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

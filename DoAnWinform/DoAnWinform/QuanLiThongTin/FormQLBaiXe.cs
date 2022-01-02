@@ -17,28 +17,31 @@ namespace DoAnWinform
        public FormBaiXe()
         {
             InitializeComponent();
-            hienthi();
-           
-                
-            dataGridViewve.Columns[0].HeaderText = "Loại xe";
-            dataGridViewve.Columns[1].HeaderText = "Tổng số chỗ";
-            dataGridViewve.Columns[2].HeaderText = "Số chỗ trống";
+     
+
             //trong
-            ottrong.Text = baixeDA.Instance.tongxeCongtrong().ToString();
-            xmtrog.Text = baixeDA.Instance.tongxebuyttrong().ToString();
-            xttrog.Text = baixeDA.Instance.tongxetaitrong().ToString();
-            contaitrog.Text = baixeDA.Instance.tongxeCongtrong().ToString();
-            //tong
-            ottong.Text = baixeDA.Instance.tongxecon().ToString();
-            xmtong.Text = baixeDA.Instance.tongxebuyt().ToString();
-            xttong.Text = baixeDA.Instance.tongxetai().ToString();
-            contaitong.Text = baixeDA.Instance.tongxeCong().ToString();
+            tongxetaitrong.Text = baixeDA.Instance.tongxetaitrong().ToString();
+            tongxeCongTrong.Text = baixeDA.Instance.tongxeCongtrong().ToString();
+            tongxebuyttrong.Text = baixeDA.Instance.tongxebuyttrong().ToString();
+            tongototrong.Text = baixeDA.Instance.tongcontrong().ToString();
+            tongtong.Text = (baixeDA.Instance.tongcontrong() + baixeDA.Instance.tongxebuyttrong() + baixeDA.Instance.tongxeCongtrong() + baixeDA.Instance.tongxetaitrong()).ToString();
+            label12.Text = tongtong.Text;
+            //tong xe cu the ht
+            tongsoxeconght.Text = xeDA.Instance.tongxeContainer().ToString();
+            tongsoxetaiht.Text = xeDA.Instance.tongxetai().ToString();
+            tongxebuytht.Text = xeDA.Instance.tongxebuyt().ToString();
+            tongotoht.Text = xeDA.Instance.tongxecon().ToString();
+            //tong xe hien tai
+            tongxeht.Text = (xeDA.Instance.tongxecon() + xeDA.Instance.tongxebuyt() + xeDA.Instance.tongxeContainer() + xeDA.Instance.tongxetai()).ToString();
+            label6.Text = tongxeht.Text;
+
 
         }
-        void hienthi()
+      
+
+        private void tongsoxeconght_Click(object sender, EventArgs e)
         {
-            dataGridViewve.DataSource = baixeDA.Instance.hienthi();
-        }
 
+        }
     }
 }

@@ -124,9 +124,12 @@ namespace DoAnWinform.TruyXuatDA
             string querytien = "update BAIXE set soTienThuVe=soTienThuVe+" + ttien + " where loaiXe=(select loaiXe from XE where bienSo='" + bien + "')";
             string queryve = "update VE set bienSo=null, loaiXe=null where bienSo='" + bien + "'";
             string query = "delete from Xe where bienSo='" + bien + "'and maSoVe='" + ma + "'";
+           
             if (vethang(bien))
-                query = "update XE set maSoVe=N'Vé tháng', tgvaoben=null where bienSo=N'" + bien + "'";
-            string Querybai = "update BAIXE set soChoTrong=((select tongSoCho from BAIXE where loaiXe=(select loaiXe from XE where bienSo=N'" + bien + "')) + 1 - (select count(bienSo) from XE where loaiXe=(select loaiXe from XE where bienSo=N'" + bien + "') and maSoVe!=N'Vé tháng')) where loaiXe=(select loaiXe from XE where bienSo=N'" + bien + "')";
+                query = "delete from Xe where bienSo = '" + bien + "'and maSoVe = '" + ma + "'";
+
+            string Querybai = "update BAIXE set soChoTrong=((select tongSoCho from BAIXE where loaiXe=(select loaiXe from XE where bienSo=N'" + bien + "')) + 0 - (select count(bienSo) from XE where loaiXe=(select loaiXe from XE where bienSo=N'" + bien + "') and maSoVe!= null)) where loaiXe=(select loaiXe from XE where bienSo=N'" + bien + "')";
+
             string querytk = "insert into THONGKE values((select maSoVe from XE where bienSo='" + bien + "'),'" + bien + "',(select loaiXe from XE where bienSo='" + bien + "'),(select tenXe from XE where bienSo='" + bien + "'),(select mauXe from XE where bienSo='" + bien + "'),(select loaiVe from XE where bienSo='" + bien + "')," + ttien + ",(select tgvaoben from XE where bienSo='" + bien + "'),'" + DateTime.Now + "',null,null)";
             int tien = dataprovider.Instance.ExcuteNonQuery(querytien);
             int bai = dataprovider.Instance.ExcuteNonQuery(Querybai);
@@ -144,7 +147,7 @@ namespace DoAnWinform.TruyXuatDA
         //kiểm tra xem xe có tồn tại hay không
         public Boolean tontaixe(string bien)
         {
-            string query = "select * from Xe where bienSo='" + bien + "' and maSoVe!='Vé tháng'";
+            string query = "select * from Xe where bienSo='" + bien + "'";
             return dataprovider.Instance.ExcuteQuery(query).Rows.Count > 0;
         }
         public Boolean tontaive(string ma)
@@ -243,6 +246,6 @@ namespace DoAnWinform.TruyXuatDA
             return x;
         }
         //xóa khỏi danh sách vé tháng
- 
+
     }
 }

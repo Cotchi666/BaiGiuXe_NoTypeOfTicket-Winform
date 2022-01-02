@@ -22,8 +22,9 @@ namespace DoAnWinform
             dataGridViewtkht.Columns[2].HeaderText = "Loại xe";
             dataGridViewtkht.Columns[3].HeaderText = "Tên xe";
             dataGridViewtkht.Columns[4].HeaderText = "Màu xe";
-            dataGridViewtkht.Columns[5].HeaderText = "TG vào bến";
-            dataGridViewtkht.Columns[6].HeaderText = "Loại vé";
+            dataGridViewtkht.Columns[5].Visible = false;
+            dataGridViewtkht.Columns[6].HeaderText = "TG vào bến";
+            dataGridViewtkht.Columns[7].Visible = false;
 
             //trong
             tongxetaitrong.Text = baixeDA.Instance.tongxetaitrong().ToString();

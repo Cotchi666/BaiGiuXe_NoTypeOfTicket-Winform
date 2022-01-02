@@ -18,13 +18,15 @@ namespace DoAnWinform.QuanLiThongTin
         {
             InitializeComponent();
             hienthi();
-            dataGridViewxe.Columns[0].HeaderText = "mã số";
-            dataGridViewxe.Columns[1].HeaderText = "biển số";
-            dataGridViewxe.Columns[2].HeaderText = "loại xe";
-            dataGridViewxe.Columns[3].HeaderText = "tên xe";
-            dataGridViewxe.Columns[4].HeaderText = "màu xe";
-            dataGridViewxe.Columns[5].HeaderText = "Loại vé";
+
+            dataGridViewxe.Columns[0].HeaderText = "Mã số";
+            dataGridViewxe.Columns[1].HeaderText = "Biển số";
+            dataGridViewxe.Columns[2].HeaderText = "Loại xe";
+            dataGridViewxe.Columns[3].HeaderText = "Tên xe";
+            dataGridViewxe.Columns[4].HeaderText = "Màu xe";
+            dataGridViewxe.Columns[5].Visible = false;
             dataGridViewxe.Columns[6].HeaderText = "TG vào bến";
+            dataGridViewxe.Columns[7].Visible = false;
         }
         public void hienthi()
         {

@@ -57,7 +57,7 @@ namespace DoAnWinform.TruyXuatDA
         public int tongxebuyttrong()
         {
             int so = 0;
-            String Query = "select * from BAIXE where loaiXe=N'Xe buýt'";
+            String Query = "select * from BAIXE where loaiXe=N' Xe buýt'";
             DataTable data = new DataTable();
             data = dataprovider.Instance.ExcuteQuery(Query);
             foreach (DataRow item in data.Rows)

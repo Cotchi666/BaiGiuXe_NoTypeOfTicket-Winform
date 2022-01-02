@@ -63,6 +63,16 @@ namespace DoAnWinform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _20180117_155433 {
+            get {
+                object obj = ResourceManager.GetObject("20180117_155433", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_help_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-help-50", resourceCulture);
@@ -76,6 +86,26 @@ namespace DoAnWinform.Properties {
         internal static System.Drawing.Bitmap icons8_help_501 {
             get {
                 object obj = ResourceManager.GetObject("icons8-help-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tải_xuống {
+            get {
+                object obj = ResourceManager.GetObject("tải xuống", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

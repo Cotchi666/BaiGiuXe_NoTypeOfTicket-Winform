@@ -37,15 +37,9 @@ namespace DoAnWinform
             this.panel1 = new System.Windows.Forms.Panel();
             this.txttaikhoan = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             this.panel2_Paint.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -96,6 +90,7 @@ namespace DoAnWinform
             this.button2.TabIndex = 1;
             this.button2.Text = "Thoát";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -137,50 +132,12 @@ namespace DoAnWinform
             this.label1.TabIndex = 0;
             this.label1.Text = "Tên đăng nhập:";
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel4.Location = new System.Drawing.Point(-4, -1);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(644, 27);
-            this.panel4.TabIndex = 8;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel5.Location = new System.Drawing.Point(0, 311);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(644, 27);
-            this.panel5.TabIndex = 9;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(528, 108);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 119);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(6, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 161);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
             // FormDN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(638, 325);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2_Paint);
             this.Controls.Add(this.panel1);
@@ -194,8 +151,6 @@ namespace DoAnWinform
             this.panel2_Paint.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -211,9 +166,5 @@ namespace DoAnWinform
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txttaikhoan;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

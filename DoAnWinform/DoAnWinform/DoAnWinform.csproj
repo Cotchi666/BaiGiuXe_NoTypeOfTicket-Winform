@@ -63,7 +63,6 @@
     <Compile Include="ThongKe\FormThongKe.Designer.cs">
       <DependentUpon>FormThongKe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\XeDaGui.cs" />
     <Compile Include="QuanLiThongTin\FormAddTicket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +128,9 @@
     <EmbeddedResource Include="Admin\FormAdmin.resx">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLiThongTin\FormAddTicket.resx">
+      <DependentUpon>FormAddTicket.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLiThongTin\FormDSXe.resx">
       <DependentUpon>FormDSXe.cs</DependentUpon>
     </EmbeddedResource>
@@ -169,7 +171,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\20180117_155433.jpg" />
+    <None Include="Resources\20180117_1554331.jpg" />
     <Content Include="Resources\icons8-help-50.jpg" />
+    <None Include="Resources\logo.png" />
+    <Content Include="Resources\tải xuống.jpg" />
+    <None Include="Resources\tải xuống1.jpg" />
     <None Include="Resources\icons8-help-50.png" />
     <None Include="Resources\icons8-help-501.jpg" />
   </ItemGroup>

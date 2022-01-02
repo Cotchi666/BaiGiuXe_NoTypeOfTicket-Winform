@@ -11,7 +11,7 @@ namespace DoAnWinform.TruyXuatDA
     public class dataprovider
     {
         private static dataprovider instance;
-        private string strconn = @"Data Source=DESKTOP-SCBOTSE;Initial Catalog=QuanLyXeOK;Integrated Security=True";
+        private string strconn = @"Data Source=DESKTOP-SCBOTSE;Initial Catalog=QLXE;Integrated Security=True";
 
         public static dataprovider Instance
         {

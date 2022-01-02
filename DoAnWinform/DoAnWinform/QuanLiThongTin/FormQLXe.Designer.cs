@@ -39,7 +39,7 @@ namespace DoAnWinform.QuanLiThongTin
             // 
             // btquanlyxe
             // 
-            this.btquanlyxe.BackColor = System.Drawing.Color.DarkOrange;
+            this.btquanlyxe.BackColor = System.Drawing.Color.OrangeRed;
             this.btquanlyxe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btquanlyxe.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btquanlyxe.ForeColor = System.Drawing.Color.White;
@@ -79,7 +79,7 @@ namespace DoAnWinform.QuanLiThongTin
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkOrange;
+            this.button1.BackColor = System.Drawing.Color.Blue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
@@ -126,7 +126,7 @@ namespace DoAnWinform.QuanLiThongTin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkOrange;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1022, 471);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btquanlyve);

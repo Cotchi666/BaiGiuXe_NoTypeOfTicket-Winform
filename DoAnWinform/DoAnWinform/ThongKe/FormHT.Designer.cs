@@ -61,6 +61,7 @@ namespace DoAnWinform
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewtkht)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -73,9 +74,9 @@ namespace DoAnWinform
             // 
             this.dataGridViewtkht.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewtkht.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewtkht.Location = new System.Drawing.Point(2, 255);
+            this.dataGridViewtkht.Location = new System.Drawing.Point(2, 279);
             this.dataGridViewtkht.Name = "dataGridViewtkht";
-            this.dataGridViewtkht.Size = new System.Drawing.Size(766, 180);
+            this.dataGridViewtkht.Size = new System.Drawing.Size(766, 156);
             this.dataGridViewtkht.TabIndex = 4;
             // 
             // groupBox1
@@ -160,7 +161,7 @@ namespace DoAnWinform
             // 
             this.panel6.Controls.Add(this.button1);
             this.panel6.Controls.Add(this.txttimkiemadmim);
-            this.panel6.Location = new System.Drawing.Point(12, 194);
+            this.panel6.Location = new System.Drawing.Point(12, 218);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(729, 55);
             this.panel6.TabIndex = 11;
@@ -210,9 +211,9 @@ namespace DoAnWinform
             this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label16.Location = new System.Drawing.Point(539, 20);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(120, 18);
+            this.label16.Size = new System.Drawing.Size(119, 18);
             this.label16.TabIndex = 2;
-            this.label16.Text = "Vị trí cho xe máy:";
+            this.label16.Text = "Vị trí cho xe buýt:";
             // 
             // tongtong
             // 
@@ -273,7 +274,7 @@ namespace DoAnWinform
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.OrangeRed;
-            this.groupBox4.Location = new System.Drawing.Point(15, 143);
+            this.groupBox4.Location = new System.Drawing.Point(15, 160);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(729, 41);
             this.groupBox4.TabIndex = 8;
@@ -351,7 +352,7 @@ namespace DoAnWinform
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.groupBox2.Location = new System.Drawing.Point(15, 97);
+            this.groupBox2.Location = new System.Drawing.Point(15, 114);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(729, 40);
             this.groupBox2.TabIndex = 6;
@@ -362,7 +363,7 @@ namespace DoAnWinform
             // 
             this.tongsoxeconght.AutoSize = true;
             this.tongsoxeconght.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tongsoxeconght.Location = new System.Drawing.Point(612, 16);
+            this.tongsoxeconght.Location = new System.Drawing.Point(667, 16);
             this.tongsoxeconght.Name = "tongsoxeconght";
             this.tongsoxeconght.Size = new System.Drawing.Size(44, 18);
             this.tongsoxeconght.TabIndex = 5;
@@ -418,11 +419,20 @@ namespace DoAnWinform
             this.label9.TabIndex = 0;
             this.label9.Text = "Tổng số xe:";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Location = new System.Drawing.Point(12, 93);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(732, 15);
+            this.panel1.TabIndex = 18;
+            // 
             // FormHT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(769, 435);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.panel6);
@@ -482,5 +492,6 @@ namespace DoAnWinform
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel1;
     }
 }
